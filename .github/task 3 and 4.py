@@ -31,7 +31,7 @@ print()
 
 
 def checked_access(L:list[int], idx:int) -> Optional[int]:
-    test = idx >= 0 and idx < len(L)                            # test (first call): False, test (second call): True
+    test = idx >= 0 and idx < len(L)                            # test (first call): none, test (second call): one
     if test:                                                    # This check prevents an IndexError
         return L[idx]
     else:
